@@ -28,7 +28,7 @@ const Pages = () => {
         if(isAuthenticated){
             instance.ssoSilent({
                 scopes: ["user.read"],
-                loginHint:"rfreitas@live.com"
+                loginHint:""
             }).then((response)=>{
                 instance.setActiveAccount(response.account);
             }).catch((error)=> {
